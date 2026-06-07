@@ -1,88 +1,71 @@
 # Mood Journal
 
-Mood Journal is a private desktop journaling application that helps you organize thoughts, notes, and daily reflections in a clean and distraction-free workspace.
-
-## Download & Installation
-
-1. Download the installer from the provided Google Drive link.
-
-2. Locate the downloaded file:
-
-   ```text
-   Mood Journal Setup 1.0.0.exe
-   ```
-
-3. Double-click the installer to start the setup process.
-
-4. If Windows displays a security warning, click **More Info** and then **Run Anyway**.
-
-5. Follow the installation steps shown on screen.
-
-6. Once installation is complete, launch **Mood Journal** from:
-
-   * Desktop Shortcut (if created)
-   * Start Menu → Mood Journal
-
-## Getting Started
-
-1. Open Mood Journal.
-2. Create a new journal tab from the sidebar.
-3. Give your journal a name.
-4. Start writing.
-
-Your work is automatically saved while you write.
+A modern desktop journaling application built for organizing thoughts, notes, and daily reflections in a clean and distraction-free workspace.
 
 ## Features
 
-### Journal Management
+* Multiple journal tabs
+* Auto-save support
+* Search across journals
+* Dark & Light mode
+* 10 customizable page themes
+* Version history and restore
+* Local data storage
+* Desktop application for Windows
 
-* Create multiple journal tabs
-* Rename existing tabs
-* Delete tabs you no longer need
-* Switch between journals instantly
+## Installation
 
-### Writing Experience
+### Prerequisites
 
-* Dedicated writing area for each journal
-* Automatic saving
-* Last edited timestamp
+* Node.js (Latest LTS version recommended)
+* npm
 
-### Search
+### Clone the Repository
 
-* Search across all journals and entries
-* Quickly open matching results
+```bash
+git clone <repository-url>
+cd mood-journal
+```
 
-### Themes & Appearance
+### Install Dependencies
 
-* Dark Mode and Light Mode
-* 10 page color themes:
+```bash
+npm install
+```
 
-  * White
-  * Cream
-  * Soft Yellow
-  * Pink
-  * Lavender
-  * Sky Blue
-  * Mint
-  * Peach
-  * Gray
-  * Dark Slate
+### Run the Application
 
-### History
+```bash
+npm run dev
+```
 
-* View previous versions of journal entries
-* Restore older versions when needed
+## Build Windows Installer
 
-## Privacy
+To create a Windows installer:
 
-All journal data is stored locally on your computer. No account, subscription, or internet connection is required to use the application.
+```bash
+npm run build
+```
 
-## Need Help?
+The generated installer can be found inside:
 
-If the application does not start after installation:
+```text
+dist-electron/
+```
 
-1. Restart your computer.
-2. Run the application as Administrator.
-3. Reinstall using the latest installer.
+## Usage
 
-Enjoy journaling with Mood Journal.
+1. Create a journal tab.
+2. Start writing.
+3. Entries are automatically saved.
+4. Use Search to find content across journals.
+5. Restore older versions using the History panel.
+6. Customize the experience using themes and appearance settings.
+
+## Data Storage
+
+All journal data is stored locally on the user's device. No account or internet connection is required.
+
+## License
+
+This project is provided for educational and personal use.
